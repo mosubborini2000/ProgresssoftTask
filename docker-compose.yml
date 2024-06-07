@@ -1,0 +1,16 @@
+version: '3'
+
+services:
+  deal:
+    container_name: deal
+    image: postgres
+    ports:
+      - 5554:5432
+    environment:
+      POSTGRES_USER: deal
+      POSTGRES_PASSWORD: deal
+      POSTGRES_DB: deal
+
+volumes:
+  deal:
+    driver: local
